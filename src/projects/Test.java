@@ -22,7 +22,7 @@ public class Test {
         drawer.startCanvas(150, 50, true);
 
         while(true){
-            drawer.drawCanvas(true);
+            drawer.drawCanvas(false);
 
             drawer.setColor(Colors.GREEN);
             for(int i = 0; i < 10; i++){
