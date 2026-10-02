@@ -4,12 +4,12 @@ package projects;
 import drawer.Canvas;
 import drawer.Colors;
 
+
 // Dounut Isometrico ou ortografico, sem perspectiva nem luminosidade.
 // pontos gerados, e depois rotacionados
 // a distancia e controlada por tipos de caracteres na direcao z (profundidade)
 
 public class Dounut {
-
     // inicializando o programa
     public static void main(String[] args){
         Dounut don = new Dounut();
@@ -21,7 +21,7 @@ public class Dounut {
         int outerRingDensity = 20; // dencidade do anel no tubo
         int totalPoints = initialRingDensity * outerRingDensity; // todos os pontos
         int[][] points = new int[initialRingDensity * outerRingDensity][3]; // criando os pontos, cada ponto tem uma coordedana, por enquanto vazia
-        
+
         int R = 70; // Raio do anel maior
         int r = 20; // Raio do anel menor
 
@@ -37,9 +37,9 @@ public class Dounut {
                 double t2 = (double) j / outerRingDensity * Math.PI * 2;
 
                 double distance = R + r * Math.cos(t2); // todas distancias do pontos do anel menor para o centro do maior, (em linha reta por enquanto)
-                
+
                 // rotacao em volta do maior
-                int x = (int) Math.round(distance * Math.cos(t)); 
+                int x = (int) Math.round(distance * Math.cos(t));
                 int y = (int) Math.round(distance * Math.sin(t));
                 // em volta do menor
                 int z = (int) Math.round(r * Math.sin(t2));
@@ -92,7 +92,7 @@ public class Dounut {
 
                 // tentar pegar a profundidade
                 char c = getCharacter(rZ);
-                
+
                 //salva no buffer
                 renderBuffer[i][0] = rX;
                 renderBuffer[i][1] = rY;
@@ -108,7 +108,7 @@ public class Dounut {
                 char c = (char) renderBuffer[i][3];
                 int drawX = 60 + renderBuffer[i][0];
                 int drawY = 50 + renderBuffer[i][1];
-                
+
                 // na hora de desenhar, o z nao existe, mas colocarmos o caractere
                 // e dividi por 2 porque o canvas em ascii e mais alto
                 drawer.drawChar(c, drawX, drawY/2);

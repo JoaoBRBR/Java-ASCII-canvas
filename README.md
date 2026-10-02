@@ -22,6 +22,10 @@ Abstract the drawing like on processing.
 Then I will focus on the projects:
 <img width="1834" height="1192" alt="image" src="https://github.com/user-attachments/assets/c780127c-24e9-4bc1-9c2d-b0c218e69c9a" />
 
+## Donut 3D (not raytracing yet)
+
+It has 3 shapes, you can run `java -cp bin projects.Donut` with no arguments (the default is donut)
+or `java -cp bin projects.Donut <shape>` with `shape` being `donut`, `cube`, or `random`.
 
 ## Game of Life
 ## Image Converter
