@@ -26,6 +26,12 @@ Then I will focus on the projects:
 
 It has 3 shapes, you can run `java -cp bin projects.Donut` with no arguments (the default is donut)
 or `java -cp bin projects.Donut <shape>` with `shape` being `donut`, `cube`, or `random`.
+<img width="929" height="767" alt="donut" src="https://github.com/user-attachments/assets/e776ac01-11b6-4db3-9194-a10ba9c3a038" />
+
+
+<img width="1032" height="852" alt="cube" src="https://github.com/user-attachments/assets/cffc68ca-2129-4a0d-941c-a9da76b3a619" />
+
+
 
 ## Game of Life
 ## Image Converter
